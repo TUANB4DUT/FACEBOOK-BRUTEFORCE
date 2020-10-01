@@ -35,3 +35,6 @@ try:
 except KeyboardInterrupt:
     os.system("clear")
     print('\x1b[1;31;40mKeluar dari program')
+except IndexError:
+    os.system("clear")
+    print("masukan nama email terlebih dahulu")
