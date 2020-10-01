@@ -3,11 +3,7 @@ GILANG X QYWOK - BRUTEFORCE FACEBOOK WITH WORDLIST
 ■■■■■ *TOOLS TUAN B4DUT* ■■■■■
 ■■■■■■■ *BRUTEFORCE FACEBOOK WITH WORDLIST* ■■■■■■■
 
-```$apt upgrade && apt update```<br>
-```$pkg install python2 git nano```<br>
-```$pip2 install requests```<br>
-```$git clone https://github.com/belajarqywok/FACEBOOK-BRUTEFORCE```<br>
-```$cd FACEBOOK-BRUTEFORCE```
+```$apt upgrade && apt update\n $pkg install python2 git nano $pip2 install requests $git clone https://github.com/belajarqywok/FACEBOOK-BRUTEFORCE $cd FACEBOOK-BRUTEFORCE```
 
 * HOW'S TO CREATE WORDLIST WITH YOURSELF ?
 $nano wordlist.txt
