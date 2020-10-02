@@ -38,4 +38,4 @@ except KeyboardInterrupt:
     print('\x1b[1;31;40mKeluar dari program')
 except IndexError:
     os.system("clear")
-    print("masukan nama terlebih dahulu")
+    print("masukan nama email/wordlist terlebih dahulu")
