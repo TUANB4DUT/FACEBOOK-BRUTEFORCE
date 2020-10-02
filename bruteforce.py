@@ -20,12 +20,12 @@ class Main:
 try:
     if os.system("ping -c 1 " + "google.com") == 0:
         os.system("clear")
-        print ('\x1b[1;31;40m [ ====FACEBOOK BRUTEFORCE WITH WORDLIST==== ]')
-        print ('\x1b[1;31;40m [ ================TUANB4DUT================ ]')
-        print ('\x1b[1;31;40m [ =======https://github.com/TUANB4DUT====== ]')
-        print ('\x1b[1;37;40m [ ======INDONESIAN TERMUX ASSOCIATION====== ]')
-        print ('\x1b[1;37;40m [ ==============D35TR0Y SQUAD============== ]')
-        print ('\x1b[1;37;40m [ ================INDONESIA================== ]')
+        print ('\x1b[1;31;40m [ ======== FACEBOOK BRUTEFORCE WITH WORDLIST ======= ]')
+        print ('\x1b[1;31;40m [ ================ TUANB4DUT X QYWOK =============== ]')
+        print ('\x1b[1;31;40m [ ========== https://github.com/belajarqywok ======= ]')
+        print ('\x1b[1;37;40m [ =========== INDONESIAN TERMUX ASSOCIATION ======== ]')
+        print ('\x1b[1;37;40m [ ============= D35TR0Y SQUAD X QNETICS ============ ]')
+        print ('\x1b[1;37;40m [ ===================== INDONESIA ================== ]')
         mail=sys.argv[1]
         wfile=sys.argv[2]
         if __name__ == '__main__':
