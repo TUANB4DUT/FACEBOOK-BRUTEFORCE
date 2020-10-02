@@ -15,7 +15,7 @@ AFTER THAT SAVE WITH = CTRL + C>>CLICK Y AND ENTER*
 
 *NOW YOU CAN LAUNCH THIS TOOLS WITH*
 
-```$python2 bruteforce.py [ nama email anda ]```
+```$python2 bruteforce.py [ nama email korban ] [ file wordlist ]```
 
 
 ■■■■■■ *HAPPY CRACKING WITH BRUTEFORCE* ■■■■■■
