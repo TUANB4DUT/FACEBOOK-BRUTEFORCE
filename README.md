@@ -1,6 +1,6 @@
 # FACEBOOK-BRUTEFORCE
 GILANG - BRUTEFORCE FACEBOOK WITH WORDLIST 
-■■■■■ *TOOLS TUAN B4DUT* ■■■■■
+■■■■■ *TOOLS EVAN FAUZAN* ■■■■■
 ■■■■■■■ *BRUTEFORCE FACEBOOK WITH WORDLIST* ■■■■■■■
 
 ```$apt upgrade && apt update```
